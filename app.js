@@ -29,8 +29,7 @@ function LunchCheckController($scope)
 		else if(count<=3 && count !=0)
 		{
 			$scope.message= "Enjoy!!";
-			alert(count);
-			alert($scope.message);
+			
 			}
 		else
 		{
