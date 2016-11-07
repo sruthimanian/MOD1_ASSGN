@@ -30,13 +30,12 @@ function LunchCheckController($scope)
 		{
 			$scope.message= "Enjoy!!";
 			
-			}
+		}
 		else
 		{
 			$scope.message= "Too much!";
 			
-			
-			}
+		}
 		
 		};
 
