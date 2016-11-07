@@ -13,6 +13,7 @@ function LunchCheckController($scope)
 	    $scope.message="";
 		$scope.check=function()
 		{
+		$scope.message="";
 			var count=0;
 		    var items=$scope.list.split(",");
 			for( var i=0; i<items.length;i++)
@@ -25,10 +26,18 @@ function LunchCheckController($scope)
 		
 		if(count==0)
 			$scope.message="Please enter data first";
-		else if(0<count<=3)
+		else if(count<=3 && count !=0)
+		{
 			$scope.message= "Enjoy!!";
+			alert(count);
+			alert($scope.message);
+			}
 		else
+		{
 			$scope.message= "Too much!";
+			
+			
+			}
 		
 		};
 
